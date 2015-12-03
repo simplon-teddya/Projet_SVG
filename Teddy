@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
+    <meta charset="utf-8">
+    <title>SVG</title>
+
+
+  </head>
+  <body>
+<div id="ico_menu" onclick="menu()">
+  <div id="barre1"></div>
+  <div id="barre2_2"></div>
+  <div id="barre2_1"></div>
+  <div id="barre3"></div>
+</div>
+
+
+<div id="menu">
+  <div id="ico_croix" onclik="menu_close()">
+    <div id="barre2_2_2"></div>
+  <div id="barre2_1_2"></div>
+</div>
+<h1>PRÉSENTATION</h1>
+<h3>APPARITION</h3>
+<h3>EVOLUTION</h3>
+<h3>LOGICIEL</h3>
+<h3>PRINT</h3>
+<h3>RESPONSIVE</h3>
+<h3>UTILISATION</h3>
+
+<h1>TUTORIEL</h1>
+<h3>VIDEO</h3>
+<h3>LEXIQUE</h3>
+
+<h1>RESSOURCE</h1>
+</div>
+<script type="text/javascript">
+
+function  menu(){
+  document.getElementById("menu").style.display="block";
+  document.getElementById("barre2_1").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_1").style.transform = "rotate("+45+"deg)";
+  document.getElementById("barre2_1").style.backgroundColor ="white";
+  document.getElementById("barre1").style.display="none";
+  document.getElementById("barre3").style.display="none";
+  document.getElementById("barre2_2").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_2").style.transform = "rotate("+135+"deg)";
+  document.getElementById("barre2_2").style.backgroundColor ="white";
+}
+
+function  menu_close(){
+  console.log("Sa marche !");
+  document.getElementById("menu").style.display="none";
+  document.getElementById("barre2_1").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_1").style.transform = "rotate("+135+"deg)";
+  document.getElementById("barre2_1").style.backgroundColor ="black";
+  document.getElementById("barre1").style.display="block";
+  document.getElementById("barre3").style.display="block";
+  document.getElementById("barre2_2").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_2").style.transform = "rotate("+45+"deg)";
+  document.getElementById("barre2_2").style.backgroundColor ="black";
+  // document.getElementById("menu").style.display="none";
+  // document.getElementById("barre1").style.transition = "all 1s ease-in";
+  // document.getElementById("barre1").style.transform = "rotate("+225+"deg)";
+  // document.getElementById("barre2").style.display="block";
+  // document.getElementById("barre3").style.transition = "all 1s ease-in";
+  // document.getElementById("barre2_2").style.backgroundColor ="black";
+}
+
+/*function menu(elmt)
+{
+   if(typeof elmt == "string")
+      {elmt = document.getElementById(elmt);
+      };
+   else if  {
+     (elmt.style.display == "none")
+        elmt.style.display = "";
+   };
+   else{
+      elmt.style.display = "none";
+};*/
+    </script>
+
+                                                                                        <!-- Menu -->
+  <!-- <div id="page1"></div>
+  <container>
+<h6>LOADING</h6>
+</container> -->
+
+                                                                                        <!-- Page 1 -->
+
+<container2>
+  <!-- <div id="page2"></div>
+<h5><div class ="titre"> APPARITION </div>
+  Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+  doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+  excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent,
+  inplorans caelo iustitiam, torvum renidens fundato pectore mansit inmobilis
+</h5></div> -->
+</container2>
+
+                                                                                        <!-- Page 2  -->
+
+<!-- <container3>
+ <div class="page3">
+  <div class="scroll-vertical">
+  <div class="ligne_verticale" >    <hr width="100px" size="70px" />
+</div>
+    Cumque pertinacius ut
+  </div>
+</div>
+</container3> -->
+  </body>
+</html>
+
+
+
+*{
+  margin:0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body{
+  font-family: Geneva, Arial, sans-serif;
+}
+
+#barre1{
+  position: fixed;
+  top: 2%;
+  right: 5%;
+  /*margin-top: 1%;*/
+  background-color: #61361f;
+    width: 50px;
+    height: 7px;
+}
+
+#barre2_2{
+  position: fixed;
+  top: 4%;
+  right: 5%;
+  background-color: #61361f;
+    width: 50px;
+    height: 7px;
+    z-index: 100;
+    /*display: none;*/
+
+}
+
+
+#barre2_1{
+  /*display: */
+  position: fixed;
+  top: 4%;
+  /*margin-top: 50px;*/
+  right: 5%;
+  background-color: #61361f;
+    width: 50px;
+    height: 7px;
+    z-index: 100;
+
+  }
+
+  #barre3 {
+    position: fixed;
+    top: 6%;
+    right: 5%;
+    margin-:top: 2.8%;
+    background-color: #61361f;
+      width: 50px;
+      height: 7px;
+  }
+
+#menu{
+  display:none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /*margin-left: 16.5%;*/
+  /*margin-top: 4.5%;*/
+  background-color: #61361f;
+  border: 2px solid black;
+  /*border-radius: 10px;*/
+  z-index: 10;
+  opacity: 0.9;
+  color: white;
+  text-align: center;
+  /*padding-top: 10%;*/
+}
+
+
+h3:hover{
+  margin: 5px;
+  text-decoration: line-through;
+  
+}
+
+h1{
+  margin-top: 5%;
+}
+
+
+/*{
+  padding: 0;
+  margin: 0;
+}
+#page1{
+  background-color: #57d1ac;
+  overflow:hidden;
+  /*overflow:scroll
+}
+ h6{
+   text-align: center;
+   padding: 293px;
+   color: white;
+   font-size: 50px;
+ }
+ #page2{
+   background-color: white;
+   overflow-x: auto;
+
+ }
+
+ .titre{
+   font-size: 35px;
+   text-align: center;
+ }
+ h5 {
+  clear: both;
+  float: right;
+  margin-left: 5000px;
+  text-align: center;
+  padding-top: 180px;
+  padding-right: 25%;
+  padding-bottom: 165px;
+
+  clear: both;
+ }
+.menu{
+  float: right;
+  margin: 30px;
+
+  clear: both;
+}
+
+.page3{
+  background-color: #ebfaf7;
+}
+
+.scroll-vertical{
+  clear: both;
+  overflow-x: hidden;
+}
+
+hr{
+  color: red;
+}
+
+.ligne_verticale
+{
+    background-color: black;
+    /*color:#968273;*/
+    width:25px;
+    border:15px solid gray;
+    height:70px;
+}*/
