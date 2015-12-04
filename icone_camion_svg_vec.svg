@@ -14,7 +14,14 @@
 	<polygon fill="#EAF6F5" points="337.791,257.978 298.57,257.978 288.791,304.591 337.791,304.591 	"/>
 
 		<rect x="352.992" y="267.1" transform="matrix(0.3023 0.9532 -0.9532 0.3023 553.9869 -201.3797)" fill="#5C3A21" width="123.14" height="21.311"/>
-	<circle fill="#5C3A21" cx="355.977" cy="359.192" r="23.088"/>
+	<circle fill="#5C3A21" cx="355.977" cy="359.192" r="23.088" >
+		<animateTransform attributeName="transform"
+		 attributeType="XML"
+		 type="rotate"
+		 from="0 355.977 359.192"
+		 to="360 355.977 359.192"
+		 dur="10s"
+		 repeatCount="indefinite" /></circle>
 	<circle fill="#EAF6F5" cx="355.977" cy="359.192" r="11.725"/>
 	<circle fill="#5C3A21" cx="495.79" cy="359.192" r="23.088"/>
 	<circle fill="#EAF6F5" cx="495.789" cy="359.192" r="11.725"/>
@@ -107,9 +114,8 @@
 	<animateTransform attributeName="transform"
 	 attributeType="XML"
 	 type="translate"
-	 from="20 20"
-	 to="80 80"
-	 dur="2s"
+	 dur="5s"
+	 values="0,-250; 0,250 "
 	 repeatCount="indefinite" />
 </g>
 
