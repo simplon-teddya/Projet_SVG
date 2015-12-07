@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>icone_camion</title>
+  </head>
+  <body>
+    <img src="p4_ecran1.svg" id="chemin" />
+
+  <style media="screen">
+    * {
+      width: 100%;
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    @keyframes path-animation {
+      0%, 5% {
+    motion-offset: 0;
+  }
+      45%, 55% {
+    motion-offset: 100%;
+  }
+    100% {
+    motion-offset: 0;
+  }
+}
+    #camion {
+      animation: infinite path-animation linear 9s 6s;
+      margin-top: -45px;
+      width: 500px; height: auto;
+      margin-left: -30px;
+      motion-path: path("M20.277,433.811c0,0,284.591,62.997,359.587-30.271 c63.181-78.574,73.334-224.655-113.994-133.221c-125.994,61.497-44.719,263.301-33.999,286.486 c13.374,28.923,71.497,215.988,71.497,220.488");
+    }
+    #chemin {
+      position: fixed;
+      right: 0;
+      top: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+  </style>
+  <object data="icone_camion_svg_vec.svg" type="image/svg+xml" id="camion"/>
+
+  </body>
+</html>
