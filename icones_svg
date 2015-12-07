@@ -1,0 +1,35 @@
+<!-- Flèches du bas : -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+
+  </head>
+  <body>
+    <?xml version="1.0" standalone="no"?>
+    <svg width="100%" height="600px" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<!-- triangle directionnel descendre-->
+      <line x1="550"x2="580" y1="50"y2="10" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="546"x2="573" y1="45"y2="10" stroke="#382215" stroke-width="2"/>
+      <line x1="542"x2="566" y1="40"y2="10" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="538"x2="559" y1="35"y2="10" stroke="#382215" stroke-width="2"/>
+      <line x1="534"x2="552" y1="30"y2="10" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="530"x2="545" y1="25"y2="10" stroke="#382215" stroke-width="2"/>
+      <line x1="527"x2="538" y1="20"y2="10" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="524"x2="530" y1="15"y2="10" stroke="#382215" stroke-width="2"/>
+      <polygon points="550 50, 520 10, 580 10" stroke="#92CDC1" fill="transparent"/>
+<!-- triangle directionnel monter-->
+      <line x1="550"x2="580" y1="70"y2="110" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="547"x2="573" y1="75"y2="110" stroke="#382215" stroke-width="2"/>
+      <line x1="543"x2="566" y1="80"y2="110" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="539"x2="559" y1="85"y2="110" stroke="#382215" stroke-width="2"/>
+      <line x1="535"x2="552" y1="90"y2="110" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="531"x2="545" y1="95"y2="110" stroke="#382215" stroke-width="2"/>
+      <line x1="528"x2="538" y1="100"y2="110" stroke="#47D1AF" stroke-width="2"/>
+      <line x1="525"x2="530" y1="105"y2="110" stroke="#382215" stroke-width="2"/>
+      <polygon points="550 70, 520 110, 580 110" stroke="#92CDC1" fill="transparent/>
+      
+    </svg>
+  </body>
+  </html>
