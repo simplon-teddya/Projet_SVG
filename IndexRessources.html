@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="utf-8">
+    <title>SVG</title>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('a[href^="#"]').click(function() {
+    var ou = $(this).attr("href").substr(1);
+    var saut = $("a[id='"+ ou +"']");
+    $('html,body').animate({scrollTop: $(saut).offset().top}, 1000);
+    return false;
+    });
+    });
+    </script>
+
+
+  </head>
+  <body>
+    <div id="ico_menu" onclick="menu()">
+      <div id="barre1"></div>
+      <div id="barre2_2"></div>
+      <div id="barre2_1"></div>
+      <div id="barre3"></div>
+    </div>
+
+
+    <div id="menu">
+      <div id="ico_croix" onclick="menu_close()">
+        <div id="barre2_2"></div>
+      <div id="barre2_1"></div>
+    </div>
+    <a href="#page1" onclick="menu_close()"><h1>PRÉSENTATION</h1></a>
+    <a href="#page2" onclick="menu_close()"><h3>APPARITION</h3></a>
+    <a href="#page3" onclick="menu_close()"><h3>EVOLUTION</h3></a>
+    <a href="#page4" onclick="menu_close()"><h3>LOGICIEL</h3></a>
+    <a href="#page5" onclick="menu_close()"><h3>PRINT</h3></a>
+    <a href="#page6" onclick="menu_close()"><h3>RESPONSIVE</h3></a>
+    <a href="#page7" onclick="menu_close()"><h3>UTILISATION</h3></a>
+
+    <a href="#page8" onclick="menu_close()"><h1>TUTORIEL</h1></a>
+    <a href="#page9" onclick="menu_close()"><h3>VIDEO</h3></a>
+    <a href="#page10" onclick="menu_close()"><h3>LEXIQUE</h3></a>
+
+    <a href="#page11" onclick="menu_close()"><h1>RESSOURCE</h1></a>
+</div>
+
+<script type="text/javascript">
+function  menu(){
+  document.getElementById("menu").style.display="block";
+  document.getElementById("barre2_1").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_1").style.transform = "rotate("+45+"deg)";
+  document.getElementById("barre2_1").style.backgroundColor ="white";
+  document.getElementById("barre1").style.display="none";
+  document.getElementById("barre3").style.display="none";
+  document.getElementById("barre2_2").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_2").style.transform = "rotate("+135+"deg)";
+  document.getElementById("barre2_2").style.backgroundColor ="white";
+}
+function  menu_close(){
+  document.getElementById("menu").style.display="none";
+  document.getElementById("barre2_1").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_1").style.transform = "rotate("+0+"deg)";
+  document.getElementById("barre2_1").style.backgroundColor ="#61361f";
+  document.getElementById("barre1").style.display="block";
+  document.getElementById("barre3").style.display="block";
+  document.getElementById("barre2_2").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_2").style.transform = "rotate("+180+"deg)";
+  document.getElementById("barre2_2").style.backgroundColor ="#61361f";
+}
+    </script>
+
+
+    <script type="text/javascript">
+    $('#next').click(function() {
+          event.preventDefault();
+          $('#content').animate({
+            marginLeft: "-=200px"
+          }, "fast");
+       });
+    </script>
+
+
+
+
+<!-- Container 11 -------------------->
+
+
+<div class="conteneur11">
+<a id="page11"></a>
+<br>
+  <div class="title">
+  <p>RESSOURCES</p>
+  </div>
+  <div class="block11">
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+    <p>SITE WEB.COM</p>
+  </div>
+</div>
+
+
+<!-- Container12-------------------->
+
+
+<div class="conteneur12">
+<a id="page12"></>
+<br>
+  <div class="block12">
+    <h3>UTILISATION ACTUELLE</h3>
+    <br>
+    <p>UTILISATION ACTUELLE: Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+    doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+    excarnificari praecepit.</p>
+  </div>
+</div>
+
+  </body>
+</html>

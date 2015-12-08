@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="main.css" media="screen" title="no title">
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <meta charset="utf-8">
+    <title>SVG</title>
+
+    <script type="text/javascript">
+    $(document).ready(function() {
+    $('a[href^="#"]').click(function() {
+    var ou = $(this).attr("href").substr(1);
+    var saut = $("a[id='"+ ou +"']");
+    $('html,body').animate({scrollTop: $(saut).offset().top}, 1000);
+    return false;
+    });
+    });
+    </script>
+
+
+  </head>
+  <body>
+    <div id="ico_menu" onclick="menu()">
+      <div id="barre1"></div>
+      <div id="barre2_2"></div>
+      <div id="barre2_1"></div>
+      <div id="barre3"></div>
+    </div>
+
+
+    <div id="menu">
+      <div id="ico_croix" onclick="menu_close()">
+        <div id="barre2_2"></div>
+      <div id="barre2_1"></div>
+    </div>
+    <a href="#page1" onclick="menu_close()"><h1>PRÉSENTATION</h1></a>
+    <a href="#page2" onclick="menu_close()"><h3>APPARITION</h3></a>
+    <a href="#page3" onclick="menu_close()"><h3>EVOLUTION</h3></a>
+    <a href="#page4" onclick="menu_close()"><h3>LOGICIEL</h3></a>
+    <a href="#page5" onclick="menu_close()"><h3>PRINT</h3></a>
+    <a href="#page6" onclick="menu_close()"><h3>RESPONSIVE</h3></a>
+    <a href="#page7" onclick="menu_close()"><h3>UTILISATION</h3></a>
+
+    <a href="#page8" onclick="menu_close()"><h1>TUTORIEL</h1></a>
+    <a href="#page9" onclick="menu_close()"><h3>VIDEO</h3></a>
+    <a href="#page10" onclick="menu_close()"><h3>LEXIQUE</h3></a>
+
+    <a href="#page11" onclick="menu_close()"><h1>RESSOURCE</h1></a>
+</div>
+
+<script type="text/javascript">
+function  menu(){
+  document.getElementById("menu").style.display="block";
+  document.getElementById("barre2_1").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_1").style.transform = "rotate("+45+"deg)";
+  document.getElementById("barre2_1").style.backgroundColor ="white";
+  document.getElementById("barre1").style.display="none";
+  document.getElementById("barre3").style.display="none";
+  document.getElementById("barre2_2").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_2").style.transform = "rotate("+135+"deg)";
+  document.getElementById("barre2_2").style.backgroundColor ="white";
+}
+function  menu_close(){
+  document.getElementById("menu").style.display="none";
+  document.getElementById("barre2_1").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_1").style.transform = "rotate("+0+"deg)";
+  document.getElementById("barre2_1").style.backgroundColor ="#61361f";
+  document.getElementById("barre1").style.display="block";
+  document.getElementById("barre3").style.display="block";
+  document.getElementById("barre2_2").style.transition = "all 1s ease-in";
+  document.getElementById("barre2_2").style.transform = "rotate("+180+"deg)";
+  document.getElementById("barre2_2").style.backgroundColor ="#61361f";
+}
+    </script>
+
+
+    <script type="text/javascript">
+    $('#next').click(function() {
+          event.preventDefault();
+          $('#content').animate({
+            marginLeft: "-=200px"
+          }, "fast");
+       });
+    </script>
+
+
+
+
+
+<!-- ESPACE-------------------->
+
+<conteneur1>
+<div id="page1">ESPACE</div>
+<div classe ="esp"></div>
+</conteneur1>
+
+<!-- Container2-------------------->
+                                                                              <!-- Page 1 -->
+<div class="conteneur2">
+<a id="page2"></a>
+<br>
+  <div class ="block2">
+  <h3>APPARITION</h3>
+  <br>
+  <p>Texte 2: Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+  doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+  excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent.</p>
+  </div>
+</div>
+
+
+<!-- Container3-------------------->
+                                                                                        <!-- Page 2  -->
+
+<div class="conteneur3">
+<a id="page3"></a>
+<br>
+  <div class="block3">
+  <p>Text 3</p>
+  <div class="ligne"></div>
+  </div>
+</div>
+
+
+<!-- Container4-------------------->
+                                                                                        <!-- Page 2  -->
+<div class="conteneur4">
+  <a id="page4"></a>
+  <br>
+  <div class="block42">
+    <h3>LOGISIEL 2</h3>
+    <br>
+    <p>LOGISIEL 2: Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+    doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+    excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent.</p>
+  </div>
+    <!---TExt 2 ----->
+  <div class="block41">
+    <h3>LOGISIEL 1</h3>
+    <br>
+    <p>LOGISIEL 1: Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+    doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+    excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent.</p>
+  </div>
+</div>
+
+
+<!-- Container5-------------------->
+                                                                                        <!-- Page 2  -->
+
+<div class="conteneur5">
+<a id="page5"></a>
+<br>
+  <div class="block5">
+    <h3>PRINT</h3>
+    <br>
+    <p>PRINT: Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+    doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+    excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent.</p>
+  </div>
+</div>
+
+<!-- Container6-------------------->
+                                                                                        <!-- Page 2  -->
+
+<div class="conteneur6">
+<a id="page6"></a>
+<br>
+  <div class="blockIMG">
+   <img src="img/mob.png" alt="Mob" height="100px" width="100px">
+   <img src="img/tab.png" alt="Tab" height="150px" width="150px">
+   <img src="img/ordi.png" alt="Ordi" height="200px" width="200px">
+  </div>
+
+  <div class="block6">
+    <h3>RESPONSIVE</h3>
+    <br>
+    <p>RESPONSIVE: Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+    doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+    excarnificari praecepit, qui ita evisceratus ut cruciatibus membra deessent.</p>
+  </div>
+</div>
+
+<!-- Container7-------------------->
+                                                                                        <!-- Page 2  -->
+
+<div class="conteneur7">
+<a id="page7"></>
+<br>
+  <div class="block7">
+    <h3>UTILISATION ACTUELLE</h3>
+    <br>
+    <p>UTILISATION ACTUELLE: Cumque pertinacius ut legum gnarus accusatorem flagitaret atque sollemnia,
+    doctus id Caesar libertatemque superbiam ratus tamquam obtrectatorem audacem
+    excarnificari praecepit.</p>
+  </div>
+</div>
+                                                                                        <!-- Page 3  -->
+
+
+  <!-- <container4>
+ <div class="page4">
+  <div class="scroll-vertical">
+  <div class="ligne_verticale" >    <hr width="100px" size="70px" />
+</div>
+    Cumque pertinacius ut
+  </div>
+</div>
+</container4> -->
+
+                                                                                       <!-- Page 4  -->
+
+<!-- <container5>
+ <div class="page5">
+  <div class="scroll-vertical">
+  <div class="ligne_verticale" >    <hr width="100px" size="70px" />
+</div>
+    Cumque pertinacius ut
+  </div>
+</div>
+</container5> -->
+
+                                                                                       <!-- Page 5  -->
+
+
+ <!-- <container6>
+ <div class="page6">
+  <div class="scroll-vertical">
+  <div class="ligne_verticale" >    <hr width="100px" size="70px" />
+</div>
+    Cumque pertinacius ut
+  </div>
+</div>
+</container6> -->
+
+
+                                                                                       <!-- Page 6  -->
+
+ <!-- <container7>
+ <div class="page7">
+  <div class="scroll-vertical">
+  <div class="ligne_verticale" >    <hr width="100px" size="70px" />
+</div>
+    Cumque pertinacius ut
+  </div>
+</div>
+</container7> -->
+
+
+                                                                                        <!-- Page 7  -->
+
+<!-- <container8>
+ <div class="page8">
+  <div class="scroll-vertical">
+  <div class="ligne_verticale" >    <hr width="100px" size="70px" />
+</div>
+    Cumque pertinacius ut
+  </div>
+</div>
+</container8> -->
+
+
+                                                                                       <!-- Page 8  -->
+
+
+<!-- <container9>
+ <div class="page9">
+  <div class="scroll-vertical">
+  <div class="ligne_verticale" >    <hr width="100px" size="70px" />
+</div>
+    Cumque pertinacius ut
+  </div>
+</div>
+</container9> -->
+
+
+                                                                                       <!-- Page 9  -->
+
+
+
+
+  </body>
+</html>
